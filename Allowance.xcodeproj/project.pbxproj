@@ -14,6 +14,9 @@
 		E060F3D81BA3B84E00B5E804 /* AllowanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060F3D71BA3B84E00B5E804 /* AllowanceTests.swift */; };
 		E060F3E21BA3B8C600B5E804 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E060F3E11BA3B8C600B5E804 /* Images.xcassets */; };
 		E08E04A21BA3BA6A00291592 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */; };
+		E08E04A51BA3C04900291592 /* Allowance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E08E04A31BA3C04900291592 /* Allowance.xcdatamodeld */; };
+		E08E04B81BA3C83500291592 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04B71BA3C83500291592 /* CalendarManager.swift */; };
+		E08E04BB1BA3C8CA00291592 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		E060F3D71BA3B84E00B5E804 /* AllowanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceTests.swift; sourceTree = "<group>"; };
 		E060F3E11BA3B8C600B5E804 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E08E04A41BA3C04900291592 /* Allowance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Allowance.xcdatamodel; sourceTree = "<group>"; };
+		E08E04B71BA3C83500291592 /* CalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		E060F3BC1BA3B84D00B5E804 /* Allowance */ = {
 			isa = PBXGroup;
 			children = (
+				E08E04B61BA3C4A000291592 /* Data */,
 				E060F3BF1BA3B84D00B5E804 /* AppDelegate.swift */,
 				E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */,
 				E060F3C51BA3B84D00B5E804 /* Main.storyboard */,
@@ -134,6 +141,16 @@
 				E060F3D61BA3B84E00B5E804 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E08E04B61BA3C4A000291592 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E08E04A31BA3C04900291592 /* Allowance.xcdatamodeld */,
+				E08E04B71BA3C83500291592 /* CalendarManager.swift */,
+				E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08E04A51BA3C04900291592 /* Allowance.xcdatamodeld in Sources */,
+				E08E04B81BA3C83500291592 /* CalendarManager.swift in Sources */,
 				E08E04A21BA3BA6A00291592 /* CalendarViewController.swift in Sources */,
 				E060F3C01BA3B84D00B5E804 /* AppDelegate.swift in Sources */,
+				E08E04BB1BA3C8CA00291592 /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +521,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E08E04A31BA3C04900291592 /* Allowance.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E08E04A41BA3C04900291592 /* Allowance.xcdatamodel */,
+			);
+			currentVersion = E08E04A41BA3C04900291592 /* Allowance.xcdatamodel */;
+			path = Allowance.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E060F3B21BA3B84D00B5E804 /* Project object */;
 }

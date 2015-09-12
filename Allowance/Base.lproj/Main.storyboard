@@ -27,6 +27,7 @@
                                 <rect key="frame" x="0.0" y="94" width="600" height="230"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="calendarAppearanceDelegate" destination="9pv-A4-QxB" id="Bwg-D8-YXc"/>
                                     <outlet property="calendarDelegate" destination="9pv-A4-QxB" id="t1e-Ap-oh2"/>
                                 </connections>
                             </view>

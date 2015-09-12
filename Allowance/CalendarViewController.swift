@@ -9,7 +9,10 @@
 import UIKit
 import CVCalendar
 
-class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
+class CalendarViewController: UIViewController,
+CVCalendarViewDelegate,
+CVCalendarViewAppearanceDelegate,
+CVCalendarMenuViewDelegate {
 
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var menuView: CVCalendarMenuView!
@@ -19,9 +22,15 @@ class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalend
         
         calendarView.commitCalendarViewUpdate()
         menuView.commitMenuViewUpdate()
+        
+        self.navigationItem.title = calendarView.presentedDate.globalDescription
     }
     
     // MARK: CVCalendarViewDelegate
+    
+    func presentedDateUpdated(date: Date) {
+        self.navigationItem.title = date.globalDescription
+    }
     
     func presentationMode() -> CalendarMode {
         return .MonthView
@@ -29,6 +38,16 @@ class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalend
     
     func firstWeekday() -> Weekday {
         return .Sunday
+    }
+    
+    // MARK: CVCalendarViewAppearanceDelegate
+    
+    func dayLabelWeekdayFont() -> UIFont {
+        return UIFont(name: "Avenir-Medium", size: 13)!
+    }
+    
+    func dayLabelPresentWeekdayFont() -> UIFont {
+        return UIFont(name: "Avenir-Heavy", size: 13)!
     }
     
     // MARK: CVCalendarMenuViewDelegate
@@ -42,6 +61,6 @@ class CalendarViewController: UIViewController, CVCalendarViewDelegate, CVCalend
     }
     
     func dayOfWeekFont() -> UIFont {
-        return UIFont(name: "Avenir-Medium", size: 13)!
+        return UIFont(name: "Avenir-Heavy", size: 13)!
     }
 }
