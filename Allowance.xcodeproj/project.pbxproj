@@ -8,15 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		04F2EB70251C6E7F49A417E9 /* Pods_Allowance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D968F96A1989568BC74D1F /* Pods_Allowance.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E060A48D1BA6607C008904C9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060A48C1BA6607C008904C9 /* CategoryCell.swift */; };
+		E060A48F1BA66091008904C9 /* RepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060A48E1BA66091008904C9 /* RepeatCell.swift */; };
+		E060A4911BA6609B008904C9 /* QuantityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060A4901BA6609B008904C9 /* QuantityCell.swift */; };
+		E060A4931BA660A8008904C9 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060A4921BA660A8008904C9 /* DateCell.swift */; };
+		E060A4951BA660B3008904C9 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060A4941BA660B3008904C9 /* TitleCell.swift */; };
 		E060F3C01BA3B84D00B5E804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060F3BF1BA3B84D00B5E804 /* AppDelegate.swift */; };
 		E060F3C71BA3B84D00B5E804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E060F3C51BA3B84D00B5E804 /* Main.storyboard */; };
 		E060F3CC1BA3B84E00B5E804 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E060F3CA1BA3B84E00B5E804 /* LaunchScreen.xib */; };
 		E060F3D81BA3B84E00B5E804 /* AllowanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E060F3D71BA3B84E00B5E804 /* AllowanceTests.swift */; };
 		E060F3E21BA3B8C600B5E804 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E060F3E11BA3B8C600B5E804 /* Images.xcassets */; };
+		E08AF4631BA6066F0093AFAC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08AF4621BA6066F0093AFAC /* EventCell.swift */; };
+		E08AF4661BA636AB0093AFAC /* CreateAllowanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08AF4651BA636AB0093AFAC /* CreateAllowanceTableViewController.swift */; };
 		E08E04A21BA3BA6A00291592 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */; };
 		E08E04A51BA3C04900291592 /* Allowance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E08E04A31BA3C04900291592 /* Allowance.xcdatamodeld */; };
 		E08E04B81BA3C83500291592 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04B71BA3C83500291592 /* CalendarManager.swift */; };
 		E08E04BB1BA3C8CA00291592 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */; };
+		E08E04C11BA4993200291592 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04C01BA4993200291592 /* Category.swift */; };
+		E08E04C31BA4993200291592 /* Allowance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08E04C21BA4993200291592 /* Allowance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,11 @@
 		278304C4724FFFA0DC523966 /* Pods-Allowance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allowance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allowance/Pods-Allowance.debug.xcconfig"; sourceTree = "<group>"; };
 		C5D968F96A1989568BC74D1F /* Pods_Allowance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allowance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D6E57138E91B70C876AB4 /* Pods-Allowance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allowance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allowance/Pods-Allowance.release.xcconfig"; sourceTree = "<group>"; };
+		E060A48C1BA6607C008904C9 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		E060A48E1BA66091008904C9 /* RepeatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCell.swift; sourceTree = "<group>"; };
+		E060A4901BA6609B008904C9 /* QuantityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityCell.swift; sourceTree = "<group>"; };
+		E060A4921BA660A8008904C9 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		E060A4941BA660B3008904C9 /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		E060F3BA1BA3B84D00B5E804 /* Allowance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Allowance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E060F3BE1BA3B84D00B5E804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E060F3BF1BA3B84D00B5E804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +56,14 @@
 		E060F3D61BA3B84E00B5E804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E060F3D71BA3B84E00B5E804 /* AllowanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceTests.swift; sourceTree = "<group>"; };
 		E060F3E11BA3B8C600B5E804 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E08AF4621BA6066F0093AFAC /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		E08AF4651BA636AB0093AFAC /* CreateAllowanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAllowanceTableViewController.swift; sourceTree = "<group>"; };
 		E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E08E04A41BA3C04900291592 /* Allowance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Allowance.xcdatamodel; sourceTree = "<group>"; };
 		E08E04B71BA3C83500291592 /* CalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
 		E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		E08E04C01BA4993200291592 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E08E04C21BA4993200291592 /* Allowance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allowance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +127,18 @@
 			children = (
 				E08E04B61BA3C4A000291592 /* Data */,
 				E060F3BF1BA3B84D00B5E804 /* AppDelegate.swift */,
+				E08AF4651BA636AB0093AFAC /* CreateAllowanceTableViewController.swift */,
 				E08E04A11BA3BA6A00291592 /* CalendarViewController.swift */,
+				E08AF4621BA6066F0093AFAC /* EventCell.swift */,
 				E060F3C51BA3B84D00B5E804 /* Main.storyboard */,
 				E060F3E11BA3B8C600B5E804 /* Images.xcassets */,
 				E060F3CA1BA3B84E00B5E804 /* LaunchScreen.xib */,
 				E060F3BD1BA3B84D00B5E804 /* Supporting Files */,
+				E060A48C1BA6607C008904C9 /* CategoryCell.swift */,
+				E060A48E1BA66091008904C9 /* RepeatCell.swift */,
+				E060A4901BA6609B008904C9 /* QuantityCell.swift */,
+				E060A4921BA660A8008904C9 /* DateCell.swift */,
+				E060A4941BA660B3008904C9 /* TitleCell.swift */,
 			);
 			path = Allowance;
 			sourceTree = "<group>";
@@ -147,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				E08E04A31BA3C04900291592 /* Allowance.xcdatamodeld */,
+				E08E04C21BA4993200291592 /* Allowance.swift */,
+				E08E04C01BA4993200291592 /* Category.swift */,
 				E08E04B71BA3C83500291592 /* CalendarManager.swift */,
 				E08E04BA1BA3C8CA00291592 /* NSDate+Extension.swift */,
 			);
@@ -206,6 +233,7 @@
 				TargetAttributes = {
 					E060F3B91BA3B84D00B5E804 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6Q4UNB2LAJ;
 					};
 					E060F3D01BA3B84E00B5E804 = {
 						CreatedOnToolsVersion = 6.4;
@@ -305,11 +333,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E060A4911BA6609B008904C9 /* QuantityCell.swift in Sources */,
 				E08E04A51BA3C04900291592 /* Allowance.xcdatamodeld in Sources */,
 				E08E04B81BA3C83500291592 /* CalendarManager.swift in Sources */,
+				E08E04C31BA4993200291592 /* Allowance.swift in Sources */,
 				E08E04A21BA3BA6A00291592 /* CalendarViewController.swift in Sources */,
+				E060A4931BA660A8008904C9 /* DateCell.swift in Sources */,
+				E08AF4631BA6066F0093AFAC /* EventCell.swift in Sources */,
+				E060A48F1BA66091008904C9 /* RepeatCell.swift in Sources */,
+				E060A4951BA660B3008904C9 /* TitleCell.swift in Sources */,
 				E060F3C01BA3B84D00B5E804 /* AppDelegate.swift in Sources */,
 				E08E04BB1BA3C8CA00291592 /* NSDate+Extension.swift in Sources */,
+				E08AF4661BA636AB0093AFAC /* CreateAllowanceTableViewController.swift in Sources */,
+				E08E04C11BA4993200291592 /* Category.swift in Sources */,
+				E060A48D1BA6607C008904C9 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +476,9 @@
 			baseConfigurationReference = 278304C4724FFFA0DC523966 /* Pods-Allowance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Allowance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -450,7 +489,9 @@
 			baseConfigurationReference = CB5D6E57138E91B70C876AB4 /* Pods-Allowance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Allowance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

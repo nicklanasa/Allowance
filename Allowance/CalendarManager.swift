@@ -95,7 +95,7 @@ class CalendarManager {
             if granted {
                 var predicate = self.eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: self.calendars)
                 var results = self.eventStore.eventsMatchingPredicate(predicate)
-                return completion(results)
+                return completion(results ?? [])
             } else {
                 return completion([])
             }

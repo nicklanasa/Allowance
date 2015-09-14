@@ -116,17 +116,18 @@ extension NSDate {
     
     // Returns a date set to the beginning of the day.
     var beginningOfDayDate: NSDate? {
-        var cal = NSCalendar.currentCalendar()
-        return cal.dateFromComponents(cal.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: self))
+        return NSCalendar.currentCalendar().startOfDayForDate(self)
     }
     
     // Returns a date set to the end of the day.
     var endOfDayDate: NSDate? {
-        var cal = NSCalendar.currentCalendar()
-        var comps = NSDateComponents()
-        comps.day = 1;
-        var date = cal.dateByAddingComponents(comps, toDate: self.beginningOfDayDate!, options: .MatchFirst)
-        return date?.dateByAddingTimeInterval(-1)
+        let components = NSDateComponents()
+        components.hour = 23
+        components.minute = 59
+        components.second = 59
+        return NSCalendar.currentCalendar().dateByAddingComponents(components,
+            toDate: self.beginningOfDayDate!,
+            options: NSCalendarOptions(0))
     }
     
     /**
